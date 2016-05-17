@@ -13,8 +13,9 @@ At the moment, this prototype is mostly a visual front-end proof of concept. An 
 The WebGL app allows the user to view a 2D deformation going from an open to closed state as the user omoves a slider. The 2D "skin block" is also able to be panned, rotated and zoomed using intuitive touch gestures.
 
 ## Credits
-Group 4: James Cronin, Murari Ramesh, Jenny Sahng, Olivia Spratt
-Supervisors: Martyn Nash, Poul Nielsen ([Auckland Bioengineering Institute](http://www.abi.auckland.ac.nz/en.html))
-Client: Andrew MacGill
-Texture mapping: Mark Sagar ([Laboratory for Animate Technologies](http://www.abi.auckland.ac.nz/en/about/our-research/animate-technologies.html))
-ABAQUS Finite element model: Rachel Boswell
+
+* Group 4: James Cronin, Murari Ramesh, Jenny Sahng, Olivia Spratt
+* Supervisors: Martyn Nash, Poul Nielsen ([Auckland Bioengineering Institute](http://www.abi.auckland.ac.nz/en.html))
+* Client: Andrew MacGill
+* Texture mapping: Mark Sagar ([Laboratory for Animate Technologies](http://www.abi.auckland.ac.nz/en/about/our-research/animate-technologies.html))
+* ABAQUS Finite element model: Rachel Boswell
