@@ -19,3 +19,14 @@ The WebGL app allows the user to view a 2D deformation going from an open to clo
 * Client: Andrew MacGill
 * Texture mapping: Mark Sagar ([Laboratory for Animate Technologies](http://www.abi.auckland.ac.nz/en/about/our-research/animate-technologies.html))
 * ABAQUS Finite element model: Rachel Boswell
+
+## How to use (from original WebGL scaffolding)
+
+On the command prompt (cmd), navigate to the Google Chrome application and execute Chrome while allowing file access.
+1. `cd C:\Program Files (x86)\Google\Chrome\Application\`
+2. `chrome.exe --allow-file-access-from-files --allow-file-access`
+
+Then open `examples/skin_viewer_obj.html` using google chrome.
+To change texture, upload .jpg image into textures file and rename as `skin`.
+
+
