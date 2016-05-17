@@ -1,27 +1,20 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/)
+# SkinSim
 
-[SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/) is an open source, admin dashboard template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+This is the prototype of a web-based app that we designed for our BIOMENG 791 project, which involves askin surgery training tool based on a biomechanical finite-element model.
 
-## Getting Started
+## Installation
 
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
-* Install via bower using `bower install startbootstrap-sb-admin-2`
+To get this prototype up and running, simply clone and open `pages/index.html` in your browser (Chrome recommended).
 
-## Bugs and Issues
+## Usage
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-sb-admin-2/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/sb-admin-2/).
+At the moment, this prototype is mostly a visual front-end proof of concept. An implementation of the simulation can be found on the `sim.html` page, accessible from the "Training" menu item in the sidebar.
 
-## Creator
+The WebGL app allows the user to view a 2D deformation going from an open to closed state as the user omoves a slider. The 2D "skin block" is also able to be panned, rotated and zoomed using intuitive touch gestures.
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
-
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-sb-admin-2/blob/gh-pages/LICENSE) license.
+## Credits
+Group 4: James Cronin, Murari Ramesh, Jenny Sahng, Olivia Spratt
+Supervisors: Martyn Nash, Poul Nielsen ([Auckland Bioengineering Institute](http://www.abi.auckland.ac.nz/en.html))
+Client: Andrew MacGill
+Texture mapping: Mark Sagar ([Laboratory for Animate Technologies](http://www.abi.auckland.ac.nz/en/about/our-research/animate-technologies.html))
+ABAQUS Finite element model: Rachel Boswell
