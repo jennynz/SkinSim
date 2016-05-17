@@ -23,6 +23,7 @@ The WebGL app allows the user to view a 2D deformation going from an open to clo
 ## How to use (from original WebGL scaffolding)
 
 On the command prompt (cmd), navigate to the Google Chrome application and execute Chrome while allowing file access.
+
 1. `cd C:\Program Files (x86)\Google\Chrome\Application\`
 2. `chrome.exe --allow-file-access-from-files --allow-file-access`
 

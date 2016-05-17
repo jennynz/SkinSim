@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -30,6 +30,17 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+    /* Strip away padding for canvas on this page only*/
+    #page-wrapper {
+        padding: 0;
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+    </style>
 
 </head>
 
@@ -373,13 +384,7 @@
         <!-- Page Content -->
         <div id="page-wrapper">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div id="canvas"></div>
-                    </div>
-                    <!-- /.col-lg-12 -->
-                </div>
-                <!-- /.row -->
+                <iframe src="frame/skin_viewer_obj.html"></iframe>
             </div>
             <!-- /.container-fluid -->
         </div>
@@ -399,21 +404,6 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
-
-    <!-- Three.js & WebGL -->
-    <script src="../build/three.js"></script>
-
-    <script src="../js/controls/OrbitControls.js"></script>
-
-    <script type="text/javascript" src="../dat-gui/build/dat.gui.min.js"></script>
-
-    <script src="../js/loaders/STLLoader.js"></script>
-    <script src="../js/loaders/OBJLoader.js"></script>
-
-    <script src="../js/Detector.js"></script>
-    <script src="../js/libs/stats.min.js"></script>
-
-    <script src="../js/model.js"></script>
 
 </body>
 
