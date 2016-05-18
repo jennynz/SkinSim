@@ -16,11 +16,41 @@ body {
 	padding: 5px;
 }
 
-.ssm-toggle-nav {
+.toggle-nav-button {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	top: 10px;
+	right: 0;
+	padding: 10px;
+	color: #337ab7;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 5px 0 0 5px;
+}
+
+.toggle-nav-button:hover{
+	background-color: #f2f2f2;
+	color: #28679E;
+}
+
+.ssm-toggle-nav .fa-bars {
 	position: absolute;
 }
 
 /* Side menu tools */
+
+.toolbar-button {
+	padding: 10px;
+	color: #28679E;
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 12px;
+	font-family: Lucida Grande, sans-serif;
+}
+
+.toolbar-button:hover{
+	color: #1D598C;
+	background-color: #fff;
+}
 
 
 /* Dat.gui positioning */

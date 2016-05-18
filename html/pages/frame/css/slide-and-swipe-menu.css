@@ -5,13 +5,13 @@ nav {
     height: 100%;
     /*width: 280px;* EDIT: thinner bar */
     width: 75px;
-    background-color: #fff;
+    background-color: #f2f2f2;
     /* left: 0; EDIT: slide from right */
     right: 0;
     top: 0;
     z-index: 2;
     position: fixed;
-    overflow-y: auto;
+    overflow-y: none;
     overflow-x: visible;
     /* transform: translate(-280px,0); EDIT: slide from right */
     transform: translate(75px,0);
