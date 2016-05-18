@@ -4,43 +4,74 @@
 		<title>SkinSim Prototype Simulation</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<!-- Bootstrap Core CSS -->
+    <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../dist/css/sb-admin-2.css" rel="stylesheet">
+		
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/slide-and-swipe-menu.css" rel="stylesheet">
-	    <link href="../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-
+		<link href="../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
 	</head>
 
 	<body>
 		<nav class="nav">
-			<div class="toolbar-button ssm-toggle-nav"><span class="fa fa-crosshairs fa-3x"></span></div>
-            <div class="toolbar-button ssm-toggle-nav"><span class="ionicons ion-knife fa-3x"></span></div>
-            <div class="toolbar-button ssm-toggle-nav">Retractors</div>
-            <div class="toolbar-button ssm-toggle-nav">Suturing</div>
-            <div class="toolbar-button ssm-toggle-nav">Needle holders</div>
-            <div class="toolbar-button ssm-toggle-nav">Forceps</div>
-            <div class="toolbar-button ssm-toggle-nav"><span class="ionicons ion-android-hand fa-3x"></span></div>
-        </nav>
-        <main>
-        	<div class="toggle-nav-button"><span class="ssm-toggle-nav fa fa-bars fa-3x"></span></div>
-        </main>   
+			<div class="toolbar-button ssm-toggle-nav"><span class="fa fa-crosshairs fa-3x" name="pan"></span></div>
+				<div class="toolbar-button ssm-toggle-nav"><span class="ionicons ion-knife fa-3x" name="scalpel"></span></div>
+				<div class="toolbar-button ssm-toggle-nav">Retractors</div>
+				<div class="toolbar-button ssm-toggle-nav">Forceps</div>
+				<div class="toolbar-button">
+					<div class="btn-group">
+							<button type="button" class="btn btn-default btn-xs dropdown-toggle sutures" data-toggle="dropdown">
+									Sutures <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu pull-right ssm-toggle-nav" role="menu">
+									<li><a href="#">#6-0</a></li>
+									<li><a href="#">#5-0</a></li>
+									<li><a href="#">#4-0</a></li>
+									<li><a href="#">#3-0</a></li>
+									<li><a href="#">#2-0</a></li>
+									<li class="divider"></li>
+									<li><a href="#"><span class="fa fa-check"></span> Dissolvable</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Needle holders</a></li>
+							</ul>
+					</div>
+				</div>
+				<div class="toolbar-button ssm-toggle-nav"><span class="ionicons ion-android-hand fa-3x" name="assistant"></span></div>
+				<div class="toolbar-button ssm-toggle-nav"><span class="ionicons ion-edit fa-3x" name="pen"></span></div>
+		</nav>
+		<main>
+			<div class="toggle-nav-button"><span class="ssm-toggle-nav fa fa-bars fa-3x"></span></div>
+		</main>   
 
-        <!-- jQuery library (served from Google) -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+	
+		<!-- Bootstrap Core JavaScript -->
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <!-- touchSwipe library -->
-        <script src="http://labs.rampinteractive.co.uk/touchSwipe/jquery.touchSwipe.min.js"></script>
-        
-        <!-- Slider Javascript file -->
-        <script src="js/jquery.slideandswipe.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../../bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
-        <div class="ssm-overlay ssm-toggle-nav"></div>
+    <!-- Custom Theme JavaScript -->
+    <script src="../../dist/js/sb-admin-2.js"></script>
 
-        <script>
-            $(document).ready(function() {
-                $('.nav').slideAndSwipe();
-            });
-        </script>
+		<!-- touchSwipe library -->
+		<script src="http://labs.rampinteractive.co.uk/touchSwipe/jquery.touchSwipe.min.js"></script>
+		
+		<!-- Slider Javascript file -->
+		<script src="js/jquery.slideandswipe.js"></script>
+
+		<div class="ssm-overlay ssm-toggle-nav"></div>
+
+		<script>
+				$(document).ready(function() {
+						$('.nav').slideAndSwipe();
+				});
+		</script>
         
 		<div id="container"></div>
 		<div id="dat-gui-container"></div>

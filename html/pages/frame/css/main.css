@@ -16,10 +16,12 @@ body {
 	padding: 5px;
 }
 
+/* Surgical toolbar menu icon */
+
 .toggle-nav-button {
 	position: absolute;
-	height: 40px;
-	width: 40px;
+	height: 4.45em;
+	width: 4.45em;
 	top: 10px;
 	right: 0;
 	padding: 10px;
@@ -37,7 +39,7 @@ body {
 	position: absolute;
 }
 
-/* Side menu tools */
+/* Surgical toolbar menu tools */
 
 .toolbar-button {
 	padding: 10px;
@@ -45,11 +47,32 @@ body {
 	border-bottom: 1px solid #e7e7e7;
 	font-size: 12px;
 	font-family: Lucida Grande, sans-serif;
+  font-weight: 400;
 }
 
 .toolbar-button:hover{
 	color: #1D598C;
 	background-color: #fff;
+}
+
+.sutures,
+.sutures:hover,
+.sutures.active,
+.sutures:focus {
+  border:none;
+  background-color: rgba(0,0,0,0);
+  font-size: 12px;
+  font-family: Lucida Grande, sans-serif;
+  color: #28679E;
+}
+
+.btn-group>.btn.sutures:hover,
+.open>.dropdown-toggle.btn-default.sutures:hover,
+.open>.dropdown-toggle.btn-default.sutures:active,
+.open>.dropdown-toggle.btn-default.sutures:focus {
+  color: #28679E;
+  background-color: rgba(0,0,0,0);
+  box-shadow: none;
 }
 
 
@@ -80,13 +103,6 @@ body {
   font: 12px Lucida Grande, sans-serif;
 }
 
-.guidat-controllers {
-  height: 300px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 a.guidat-toggle:link,
 a.guidat-toggle:visited,
 a.guidat-toggle:active {
@@ -106,7 +122,7 @@ a.guidat-toggle:hover {
 
 .guidat-controller {
   padding: 3px;
-  height: 25px;
+  height: 100%;
   clear: left;
   border-bottom: 1px solid #ddd;
   background-color: #f2f2f2;
