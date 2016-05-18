@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Show me some Skin</title>
+		<title>SkinSim Prototype Simulation</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<style>
-			body {
-				color: #000;
-				font-family:Monospace;
-				font-size:13px;
-				text-align:center;
-				font-weight: bold;
-				background-color: #fff;
-				margin: 0px;
-				overflow: hidden;
-			}
-			#info {
-				color:#000;
-				position: absolute;
-				top: 0px; width: 100%;
-				padding: 5px;
-			}
-			a {
-				color: red;
-			}
-		</style>
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/slide-and-swipe-menu.css" rel="stylesheet">
 	</head>
 
 	<body>
+		<nav class="nav">
+            <p>Slide and Swipe Menu demo</p>
+        </nav>
+        <main>
+            <a href="#" class="ssm-toggle-nav" title="open nav">open / close navigation</a>
+        </main>   
+
+        <!-- jQuery library (served from Google) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+        <!-- touchSwipe library -->
+        <script src="http://labs.rampinteractive.co.uk/touchSwipe/jquery.touchSwipe.min.js"></script>
+        
+        <!-- Slider Javascript file -->
+        <script src="js/jquery.slideandswipe.js"></script>
+
+        <div class="ssm-overlay ssm-toggle-nav"></div>
+
+        <script>
+            $(document).ready(function() {
+                $('.nav').slideAndSwipe();
+            });
+        </script>
+        
 		<div id="container"></div>
+		<div id="dat-gui-container"></div>
 
 		<script src="build/three.js"></script>
 
@@ -44,7 +50,7 @@
 
 		<script>
 			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
-			var stats;
+			//var stats;
 			var camera, controls, scene, renderer;
 			var params = {};
 			var test = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
@@ -55,7 +61,12 @@
 				scene.fog = new THREE.Fog( 0xe7e7e7, 2, 15 );
 
 				params.scalpel = 1;
-				var gui = new DAT.GUI({height : 1 * 32 - 1});
+				var gui = new DAT.GUI({
+					height : 1 * 32 - 1,
+					autoPlace: false
+				});
+				var customContainer = document.getElementById('dat-gui-container');
+				customContainer.appendChild(gui.domElement);
 				gui.add(params, "scalpel").min(1).max(24).step(1);
 
 				renderer = new THREE.WebGLRenderer();
@@ -124,7 +135,7 @@
 				}, onProgress, onError );
 
 				// Lights
-				light = new THREE.DirectionalLight( 0x443333 );
+				light = new THREE.DirectionalLight( 0xC7D2D9 );
 				light.position.set( 0, 5, 0 );
 				scene.add( light );
 				light = new THREE.DirectionalLight( 0x002288 );
@@ -134,10 +145,10 @@
 				scene.add( light );
 				//
 				addShadowedLight( 0, 5, 1, 0xffffff, 0.2 );
-				addShadowedLight( 5, 5, 5, 0xffaa00, 0.1 );
+				addShadowedLight( 5, 5, 5, 0x00ffff, 0.1 );
 				// stats
-				stats = new Stats();
-				container.appendChild( stats.dom );
+				//stats = new Stats();
+				//container.appendChild( stats.dom );
 				//
 				window.addEventListener( 'resize', onWindowResize, false );
 

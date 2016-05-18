@@ -1,26 +1,54 @@
-#guidat {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: auto;
-  z-index: 1001;
-  text-align: right;
+body {
+	color: #000;
+	font-family:Monospace;
+	font-size:13px;
+	text-align:center;
+	font-weight: bold;
+	background-color: #fff;
+	margin: 0px;
+	overflow: hidden;
 }
 
+#info {
+	color:#000;
+	position: absolute;
+	top: 0px; width: 100%;
+	padding: 5px;
+}
+
+.ssm-toggle-nav {
+	position: absolute;
+}
+
+/* Side menu tools */
+
+
+/* Dat.gui positioning */
+
+#dat-gui-container {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+/* customise DAT.GUI */
+
 .guidat {
-  color: #fff;
+  color: #515151;
   opacity: 0.97;
   text-align: left;
   float: right;
-  margin-right: 20px;
-  margin-bottom: 20px;
+/*  margin-right: 20px;
+  margin-bottom: 20px;*/
+  margin-right: 0;
+  margin-bottom: 5px;
   background-color: #fff;
 }
-/*
+
 .guidat,
 .guidat input {
-  font: 9.5px Lucida Grande, sans-serif;
-}*/
+  font: 12px Lucida Grande, sans-serif;
+}
 
 .guidat-controllers {
   height: 300px;
@@ -39,7 +67,7 @@ a.guidat-toggle:active {
   text-align: center;
   display: block;
   padding: 5px;
-
+  display: none; /* Get rid of "Close Controls" button */
 }
 
 a.guidat-toggle:hover {
@@ -130,9 +158,9 @@ a.guidat-toggle:hover {
 
 .guidat-controller:last-child {
   border-bottom: none;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .guidat-propertyname {
@@ -144,7 +172,7 @@ a.guidat-toggle:hover {
 
 .guidat-controller .guidat-slider-bg:hover,
 .guidat-controller.active .guidat-slider-bg {
-  background-color: #e7e7e7;
+  background-color: #f2f2f2;
 }
 
 .guidat-controller .guidat-slider-bg .guidat-slider-fg:hover,
