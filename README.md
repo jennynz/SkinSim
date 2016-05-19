@@ -4,13 +4,14 @@ This is the prototype of a web-based app that we designed for our BIOMENG 791 pr
 
 ## Installation
 
-To get this prototype up and running, simply clone and open `pages/index.html` in your browser (Chrome recommended).
+To get this prototype up and running, simply clone or download as a zip, and open `html/pages/index.html` in your browser.
+The skin model currently only displays on Firefox. It may be possible to get the skin model to display on Chrome by opening chrome.exe with a few flags (see _How to use_ section below).
 
 ## Usage
 
-At the moment, this prototype is mostly a visual front-end proof of concept. An implementation of the simulation can be found on the `sim.html` page, accessible from the "Training" menu item in the sidebar.
+At the moment, this prototype is mostly a visual front-end proof of concept. An implementation of the simulation can be found on the `html/pages/sim.html` page, accessible from the "Training" menu item in the sidebar.
 
-The WebGL app allows the user to view a 2D deformation going from an open to closed state as the user omoves a slider. The 2D "skin block" is also able to be panned, rotated and zoomed using intuitive touch gestures.
+The WebGL app allows the user to view a 2D deformation going from an open to closed state as the user moves a slider. The 2D "skin block" is also able to be rotated and zoomed using intuitive touch gestures.
 
 ## Credits
 
