@@ -5,7 +5,7 @@ This is the prototype of a web-based app that we designed for our BIOMENG 791 pr
 ## Installation
 
 To get this prototype up and running, simply clone or download as a zip, and open `html/pages/index.html` in your browser.
-The skin model currently only displays on Firefox. It may be possible to get the skin model to display on Chrome by opening chrome.exe with a few flags (see _How to use_ section below).
+The skin model currently *only displays on Firefox* when used locally. It may be possible to get the skin model to display on Chrome by opening chrome.exe with a few flags (see _How to use_ section below) or when hosted on a server.
 
 ## Usage
 
